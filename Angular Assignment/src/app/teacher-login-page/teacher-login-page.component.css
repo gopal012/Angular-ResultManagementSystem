@@ -1,0 +1,13 @@
+.card{
+    border: none;
+    width: 30vw;
+    padding: 2vw;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,20%); 
+    background-color: rgb(176, 203, 176);
+}
+
+div a{
+    text-decoration: none;
+}

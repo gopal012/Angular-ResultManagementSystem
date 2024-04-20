@@ -1,0 +1,17 @@
+.card{
+    border: none;
+    width: 30vw;
+    padding: 1vw 2vw;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,5%); 
+    background-color: rgb(176, 203, 176);
+}
+
+form input{
+    height: 5vh;
+}
+
+div a{
+    text-decoration: none;
+}

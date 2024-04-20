@@ -1,0 +1,58 @@
+{
+  "studentRecords": [
+    {
+      "rollNo": 1234,
+      "name": "Shubham",
+      "dateOfBirth": "2023-05-06",
+      "score": 123,
+      "id": 7
+    },
+    {
+      "rollNo": 1234,
+      "name": "Gopal Goyal",
+      "dateOfBirth": "2023-05-31",
+      "score": 23,
+      "id": 8
+    },
+    {
+      "rollNo": 1234,
+      "name": "Jatin",
+      "dateOfBirth": "2023-06-01",
+      "score": 345,
+      "id": 9
+    }
+  ],
+  "SignUpTeachers": [
+    {
+      "fullName": "Gopal Goyal",
+      "email": "gopal@gmail.com",
+      "password": "12345",
+      "confirmPassword": "12345",
+      "id": 1
+    },
+    {
+      "fullName": "Shubham Chahal",
+      "email": "shubham@gmail.com",
+      "password": "12345",
+      "confirmPassword": "12345",
+      "id": 2
+    },
+    {
+      "fullName": "ria",
+      "email": "ria@gmail.com",
+      "password": "12345",
+      "confirmPassword": "12345",
+      "id": 3
+    },
+    {
+      "fullName": "ram",
+      "email": "ram@gmail.com",
+      "password": "12345678",
+      "confirmPassword": "12345678",
+      "id": 4
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

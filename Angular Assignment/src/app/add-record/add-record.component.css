@@ -1,0 +1,48 @@
+.content{
+    margin-top: 10vh;
+    height: 60vh;
+    justify-content: center;
+}
+
+h4{
+    margin-left: 18vw;
+    margin-bottom: 3vh;
+}
+
+div label{
+    width: 7vw;
+    text-align: end;
+}
+
+div input{
+    width: 35vw;
+    height: 5vh;
+    margin-left: 1vw;
+}
+
+input::-webkit-outer-spin-button,input::-webkit-inner-spin-button {
+    display: none;
+}
+
+button{
+    width: 10vw;
+    height: 6vh;
+    border-radius: 2vw;
+    font-weight: bolder;
+}
+
+.search{
+    background-color: rgb(79, 158, 255);
+    color: white;
+    border: 2px solid rgb(0, 88, 195);
+}
+
+.search:hover{
+    color: rgb(79, 158, 255);
+    background-color: white;
+}
+
+.clear:hover{
+    color: white;
+    background-color: black;
+}

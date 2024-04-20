@@ -1,0 +1,17 @@
+<div class="container content">
+    <h4>Find Result</h4>
+    <form [formGroup]="loginForm">
+        <div class=" m-2">
+            <label for="rollno">Roll No.</label>
+            <input formControlName="rollNo" type="number">
+        </div>
+        <div class=" m-2">
+            <label for="name">Date Of Birth</label>
+            <input formControlName="dateOfBirth" type="date"> 
+        </div>
+        <div class="m-auto mt-3 w-50 d-flex justify-content-center">
+            <button type="submit" class="mx-2 search" (click)="onLogin()">Search</button>
+            <button class="mx-2 clear">Clear</button>
+        </div>
+    </form>
+</div>

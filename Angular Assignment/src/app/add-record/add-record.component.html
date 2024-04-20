@@ -1,0 +1,46 @@
+<a routerLink="/teacher" class="m-2 fw-bold">Back</a>
+<div class="container content">
+    <h4>Add New Result</h4>
+    <form [formGroup]="formValue">
+        <div class="m-2 formGroup d-flex">
+            <label for="rollno">Roll No.</label>
+            <input formControlName="rollNo" type="number" [ngClass]="{'is-invalid': formValue.controls['rollNo'].errors && formValue.controls['rollNo'].touched}" class="form-control">
+            <div *ngIf="formValue.controls['rollNo'].errors && formValue.controls['rollNo'].touched" class="text-danger">
+                <small >
+                    Roll No is Required
+                </small>
+            </div>
+        </div>
+        <div class=" m-2 d-flex">
+            <label for="name">Name</label>
+            <input formControlName="name" type="text" [ngClass]="{'is-invalid': formValue.controls['name'].errors && formValue.controls['name'].touched}" class="form-control">
+            <div *ngIf="formValue.controls['name'].errors && formValue.controls['name'].touched" class="text-danger">
+                <small>
+                    Name is Required
+                </small>
+            </div>
+        </div>
+        <div class=" m-2 d-flex">
+            <label for="birthdate">Date of Birth</label>
+            <input formControlName="dateOfBirth" type="date" [ngClass]="{'is-invalid': formValue.controls['dateOfBirth'].errors && formValue.controls['dateOfBirth'].touched}" class="form-control">
+            <div *ngIf="formValue.controls['dateOfBirth'].errors && formValue.controls['dateOfBirth'].touched" class="text-danger">
+                <small >
+                    Date of Birth is Required
+                </small>
+            </div>
+        </div>
+        <div class=" m-2 d-flex">
+            <label for="score">Score</label>
+            <input formControlName="score" type="number" [ngClass]="{'is-invalid':formValue.controls['score'].errors && formValue.controls['score'].touched}" class="form-control">
+            <div *ngIf="formValue.controls['score'].errors && formValue.controls['score'].touched" class="text-danger">
+                <small >
+                    Date of Birth is Required
+                </small>
+            </div>
+        </div>
+        <div class="m-4 w-50 d-flex justify-content-center">
+            <button type="submit" class="mx-2 search" [disabled]="formValue.invalid" (click)="postStudentData()" routerLink="/teacher">Submit</button>
+            <button class="mx-2 clear" (click)="clearInput()">Clear</button>
+        </div>
+    </form>
+</div>

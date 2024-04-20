@@ -1,0 +1,27 @@
+<div class="d-flex justify-content-end m-3">
+    <button class="btn btn-primary me-2" routerLink="/add-record"> <i class="bi bi-person-add"></i>  Add Record</button>
+    <button class="btn btn-danger" routerLink="/teacher-login"><i class="bi bi-box-arrow-left"></i> Logout</button>
+</div>
+<table class="table m-auto">
+    <thead>
+        <tr>
+            <th>Roll No.</th>
+            <th>Name</th>
+            <th>Date of Birth</th>
+            <th>Score</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let data of studentData">
+            <td>{{data.rollNo}}</td>
+            <td>{{data.name}}</td>
+            <td>{{data.dateOfBirth}}</td>
+            <td>{{data.score}}</td>
+            <td>
+                <i class="bi bi-pencil m-2 text-primary" routerLink="/add-record" (click)="editEvent(data)"></i>
+                <i class="bi bi-trash m-2 text-danger" (click)="deleteStudentData(data)"></i>
+            </td>
+        </tr>
+    </tbody>
+</table>

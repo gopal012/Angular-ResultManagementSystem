@@ -1,0 +1,17 @@
+.nav{
+    border: 2px solid rgb(43, 197, 43);
+    background-color: rgb(204, 223, 204);
+    text-align: center;
+    /* justify-content: center; */
+    height: 10vh;
+}
+
+.icon{
+    font-size: 2rem;
+    margin-right: 30vw;
+    margin-left: 1vw;
+}
+
+.icon:hover{
+    cursor: pointer;
+}

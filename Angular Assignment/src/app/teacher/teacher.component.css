@@ -1,0 +1,17 @@
+table{
+    width: 70vw;
+    border: 2px solid black;
+}
+
+table th,td{
+    text-align: center;
+    border-right: 1px solid black;
+}
+
+i:hover{
+    cursor: pointer;
+}
+
+button{
+    border-radius: 10px;
+}

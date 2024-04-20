@@ -1,0 +1,12 @@
+.main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 87.5vh;
+}
+
+button{
+    width: 10vw;
+    border-radius: 1vw;
+}

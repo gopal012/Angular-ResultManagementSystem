@@ -1,0 +1,48 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="text-center">
+                    <h1>Login</h1>
+                </div>
+                <form [formGroup]="loginForm" (ngSubmit)="onLogin()">
+                    <div class="mb-3">
+                      <label for="InputEmail1" class="form-label">
+                        Email address
+                      </label>
+                      <input formControlName="email" 
+                             [ngClass]="{'is-invalid':loginForm.controls['email'].errors && loginForm.controls['email'].touched}" 
+                             type="email" 
+                             class="form-control">
+                      <div *ngIf="loginForm.controls['email'].errors  && loginForm.controls['email'].touched" class="text-danger">
+                        <small *ngIf="loginForm.controls['email'].errors['required']">
+                            Email is Required
+                        </small>
+                        <small *ngIf="loginForm.controls['email'].errors['email']">
+                            Enter Valid Email-Id
+                        </small>
+                      </div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="InputPassword1" class="form-label">
+                        Password
+                      </label>
+                      <input formControlName="password" 
+                             [ngClass]="{'is-invalid':loginForm.controls['password'].errors && loginForm.controls['password'].touched}" 
+                             type="password" 
+                             class="form-control" >
+                      <div *ngIf="loginForm.controls['password'].errors  && loginForm.controls['password'].touched" class="text-danger">
+                        <small *ngIf="loginForm.controls['password'].errors['required']">
+                            Password is Required
+                        </small>
+                      </div>
+                    </div>
+                    <button type="submit" [disabled]="loginForm.invalid" class="btn btn-success mb-2">
+                        Login
+                    </button>
+                </form>
+                <a routerLink="/teacher-signup">New User? Click Here To Register</a>
+            </div>
+        </div>
+    </div>
+</div>
